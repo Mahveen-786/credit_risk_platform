@@ -1,6 +1,6 @@
 # AI-Powered Credit Risk Intelligence Platform
 
-Built for the NeoStats AI Engineer assignment. Predictive, explainable,
+Predictive, explainable,
 auditable, and business-readable credit risk intelligence on the Kaggle
 [Home Credit Default Risk](https://www.kaggle.com/competitions/home-credit-default-risk/data)
 dataset.
