@@ -1,0 +1,13 @@
+streamlit==1.63.0
+pandas
+numpy
+lightgbm==4.7.0
+shap==0.52.0
+duckdb==1.5.5
+scikit-learn==1.8.0
+sqlglot==30.18.0
+plotly==7.0.0
+anthropic
+joblib
+matplotlib
+pytest

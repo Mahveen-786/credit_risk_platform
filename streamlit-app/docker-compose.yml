@@ -1,0 +1,18 @@
+services:
+  credit-risk-platform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - DATA_DIR=/app/data
+      - MODELS_DIR=/app/models
+      - RUNNING_IN_DOCKER=1
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - LLM_MODEL=${LLM_MODEL:-claude-sonnet-4-6}
+      - FN_COST_MULTIPLIER=${FN_COST_MULTIPLIER:-10}
+    restart: unless-stopped
