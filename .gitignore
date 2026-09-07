@@ -1,0 +1,26 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Data & model artifacts (regenerated at runtime; not committed)
+data/*.csv
+!data/.gitkeep
+models/*.joblib
+models/*.json
+!models/.gitkeep
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/eda_outputs/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Test artifacts
+.pytest_cache/
